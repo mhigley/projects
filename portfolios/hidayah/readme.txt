@@ -1,0 +1,1 @@
+http://bootstraptaste.com/demo/themes/Hidayah/blog.html
