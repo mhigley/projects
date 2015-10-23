@@ -5,6 +5,6 @@ Open terminal to project root folder
 
 npm init
 
-npm install --save-dev gulp gulp-util gulp-browserify gulp-compass gulp-autoprefixer gulp-plumber browser-sync
+npm install --save-dev gulp gulp-autoprefixer gulp-browserify gulp-compass gulp-plumber gulp-util browser-sync
 
 gulp
