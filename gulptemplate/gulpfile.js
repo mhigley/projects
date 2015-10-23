@@ -6,9 +6,9 @@ var gulp = require('gulp'),
 	plumber = require('gulp-plumber'),
 	browserSync = require('browser-sync').create();
 
-var htmlSources = ['*.html'];
-var sassSources = ['sass/*.scss'];
-var jsSources = ['js/*.js'];
+var htmlSources = ['*.html'],
+	sassSources = ['sass/*.scss'],
+	jsSources = ['js/*.js'];
 
 var onError = function(err){
 	gutil.beep();
