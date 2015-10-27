@@ -1,0 +1,75 @@
+/* sass goes here */
+
+body {
+	background-color: hsla(0, 0%, 96%, 1);
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	div {
+		width: 100px;
+		height: 100px;
+		background-color: white;
+		margin: 10px;
+		border-radius: 5px;
+		display: flex;
+		flex-wrap: wrap;
+		&:nth-child(1) {
+			justify-content: center;
+			align-items: center;
+		}
+		&:nth-child(2) {
+			justify-content: space-between;
+			& span:last-child {
+				align-self: flex-end;
+			}
+		}
+		&:nth-child(3) {
+			justify-content: space-between;
+			align-items: center;
+			& span:first-child{
+				align-self: flex-start;
+			}
+			& span:last-child {
+				align-self: flex-end;
+			}
+		}
+		&:nth-child(4) {
+			box-sizing: border-box;
+			justify-content: space-between;
+			align-content: space-between;
+			span {
+				margin-left: calc(100% / 4 - 10px);
+			}
+		}
+		&:nth-child(5) {
+			box-sizing: border-box;
+			justify-content: space-between;
+			align-content: space-between;
+			position: relative;
+			span {
+				margin-left: calc(100% / 4 - 10px);
+				&:last-child{
+					margin: 0;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate3d(-50%, -50%, 0);
+				}
+			}
+		}
+		&:nth-child(6){
+			justify-content: space-between;
+			align-content: space-between;
+		}
+	}
+	span {
+		display: block;
+		width: 10px;
+		height: 10px;
+		margin: calc(100% / 5 - 10px);
+		background-color: hsla(0, 0%, 20%, 1);
+		border-radius: 100%;
+	}
+}

@@ -1,0 +1,111 @@
+/* sass goes here */
+body {
+  background-color: whitesmoke;
+}
+
+main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+main div {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 5px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+main div:nth-child(1) {
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main div:nth-child(2) {
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+main div:nth-child(2) span:last-child {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+main div:nth-child(3) {
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main div:nth-child(3) span:first-child {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+}
+main div:nth-child(3) span:last-child {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+main div:nth-child(4) {
+  box-sizing: border-box;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+}
+main div:nth-child(4) span {
+  margin-left: calc(100% / 4 - 10px);
+}
+main div:nth-child(5) {
+  box-sizing: border-box;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+  position: relative;
+}
+main div:nth-child(5) span {
+  margin-left: calc(100% / 4 - 10px);
+}
+main div:nth-child(5) span:last-child {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+main div:nth-child(6) {
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+}
+main span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: calc(100% / 5 - 10px);
+  background-color: #333333;
+  border-radius: 100%;
+}
